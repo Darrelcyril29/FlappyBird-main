@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_night"
+    tools:context=".GameActivity">
+
+    <com.example.test.GameView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:text="0"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="420dp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:text="start"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/game_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="360dp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:text="Shop"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/skins_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="Skins"/>
+
+    <Button
+        android:id="@+id/collection_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="240dp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:text="Collection"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        tools:context=".GameActivity"
+        android:id="@+id/rl_game_over"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+        <TextView
+            android:id="@+id/txt_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="game over"
+            android:textColor="#ff0"
+            android:textSize="50sp" />
+        <TextView
+            android:id="@+id/txt_score_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="100sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff0" />
+
+            <TextView
+                android:id="@+id/txt_best_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="best 0"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_score_over"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_game_over"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Yah anda kalah"
+            android:textColor="#673AB7"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

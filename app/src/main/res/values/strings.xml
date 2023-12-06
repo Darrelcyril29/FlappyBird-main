@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FlappyBurung</string>
+    <string name="number">1</string>
+
+    <array name="option_menu">
+        <item>Buy</item>
+        <item>Use</item>
+    </array>
+</resources>
